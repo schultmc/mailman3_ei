@@ -92,8 +92,8 @@ def main():
     # python virtualenv
     conda_bin = os.path.join(MINICONDA_PATH, "bin/conda")
     prompt("Create mailman3_core and mailman3_ext virtual environment")
-    runCmd("%s create --name mailman3_core -y"%conda_bin)
-    runCmd("%s create --name mailman3_ext python=3 -y"%conda_bin)
+    runCmd("%s create --name mailman3_core python=3.6 -y"%conda_bin)
+    runCmd("%s create --name mailman3_ext python=3.6 -y"%conda_bin)
 
     # python libs for core and ext
     prompt("Installing required python libs")
